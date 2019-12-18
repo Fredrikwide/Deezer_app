@@ -1,0 +1,50 @@
+*, *::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins',
+    sans-serif;
+    line-height: 1.4;
+    background-color: rgb(31, 28, 28);
+    color: rgb(216, 212, 206);
+    font-size: 16px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+h1 {
+    font-size: 2.75rem;
+    padding: 0.5rem;
+}
+
+p {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+}
+
+.input-field {
+    width: 150px;
+    padding: 0.25rem 4rem 0,25rem 4rem;
+}
