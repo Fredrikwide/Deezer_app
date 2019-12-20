@@ -47,8 +47,14 @@ p {
 
 .input-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 0;
     max-width: 100%;
 }
+
+
 
 #search {
     width: 30rem;
@@ -69,21 +75,19 @@ p {
     outline: 0.1rem solid gainsboro;
 } 
 
-#card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex: 0;
-    flex-flow: wrap;
-    background-color: ghostwhite;
-    margin-bottom: 15rem;
 
+
+#display {
+   display: flex;
+   flex-wrap: wrap;
+   width: 900px;
+   margin: 0 auto;
+   justify-content: space-around;
     
 }
 
-#card img {
-    width: 100%;
-    object-fit: cover;
+#display .card {
+    width: 200px;
+    margin-top: 2rem;
 }
 

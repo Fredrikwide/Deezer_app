@@ -6,7 +6,9 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+     integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
      <link rel="stylesheet" href="app/css/main.css">
      <title>Music search</title>
  </head>
@@ -20,17 +22,17 @@
              </div>
              <div class="input-box" id="form-box">
                 <form class="inputform" autocomplete="off">
-                    <input class="input-field" type="search" id="search" placeholder="explore">
+                <input class="input-field" type="search" id="search" placeholder="explore">
+                <input type="radio" id="artist" name="selection" value="artist"> Artist 
+                <input type="radio" id="album" name="selection" value="Albums"> Albums
+                <input type="radio" id="tracks" name="selection" value="tracks"> Tracks
                 </form>
              </div>
              <div>
-                 <button type="submit" class="button-search" id="btn-find">search</button>
+                 <button type="button" class="button-search" id="btn-find">search</button>
              </div>
          </section>
-         <section class="display-search" id="display">
-             <div id="card">
-             </div>
-         </section>
+         <section class="displayResult" id="display"></section>
      </main>
      <script src="app/js/app.js"></script>
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
